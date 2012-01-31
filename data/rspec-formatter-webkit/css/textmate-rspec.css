@@ -85,11 +85,11 @@ pre, code {
 
 #left-hand {
   float: left;
-  width: 15%;
+  width: 25%;
 }
 #right-hand {
   float: right;
-  width: 84%;
+  width: 74%;
 }
 #navigation-block {
 	overflow: hidden;

@@ -368,7 +368,7 @@ function update_summary_graph() {
 
 function updateNavigation(){
   var target = $('#navigation-elements');
-  $('#right-hand .example-group').each(function(i, eg){
+  $('#right-hand > .example-group').each(function(i, eg){
     eg = $(eg)
     var all     = eg.find('.spec').length;
     var passing = eg.find('.spec.passed').length;
@@ -430,9 +430,8 @@ function hook_navigation_clickables(){
 
 function toggle_spec_status() {
   var status = $(this).attr( 'class' ).match( /(passed|pending(?:-fixed)?|failed)/ )[0];
-  console.log( "Looking for specs with class '" + status + "'." );
-  $(this).toggleClass( 'hidden' );
-  $( '.spec.' + status ).toggle('fast');
+  $( '#right-hand > section' ).hide()
+  $( '.spec.' + status ).parents( 'section' ).show();
 }
 
 function hook_legend_clickables() {
