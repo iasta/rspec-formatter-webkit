@@ -7,8 +7,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Dave Woodward"]
   s.email       = ["dwoodward@iasta.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{Fork with customizations for our CI stuff}
+  s.description = %q{Yep.}
 
   # s.rubyforge_project = "rspec-formatter-webkit"
 
